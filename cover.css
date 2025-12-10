@@ -75,6 +75,18 @@ h3 {
   display: none;
 }
 
+.avoidwrap {
+  display: inline-block;
+}
+
+.custom-popover {
+  white-space: nowrap;
+}
+
+.custom-popover .popover-body {
+  font-size: 0.8rem !important;
+}
+
 .cover-container {
   max-width: 100em;
   margin-bottom: 0;
@@ -218,15 +230,21 @@ p#next > a.text {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1170px) {
+@media (max-width: 1170px) {
   header {
     margin-bottom: 1.5rem;
   }
 }
 
-@media (min-width: 320px) and (max-width: 339px) {
+@media (max-width: 339px) {
   ol {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .avoidwrap {
+    display: inline;
   }
 }
 
