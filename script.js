@@ -113,14 +113,14 @@ function cashValue(v) {
 }
 
 function setYear(elem1, elem2) {
-    const exprYear = 2020;
+    const exprYear = 2019;
 
     let now = new Date();
 
     let y = now.getFullYear();
 
     let expert = y - exprYear;
-    let report = 120 * expert;
+    let report = 150 * expert;
 
     elem1.textContent = expert + '+';
     elem2.textContent = report + '+';
